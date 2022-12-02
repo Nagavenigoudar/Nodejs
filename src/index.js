@@ -16,7 +16,7 @@ async function main() {
 
     app.use('/api/products', require("./api/products/product.routes"))
 
-    app.listen(4000, () => console.log('server started at 4000'))
+    app.listen(process.env.PORT || 4000, () => console.log('server started at 4000'))
 
 }
 
